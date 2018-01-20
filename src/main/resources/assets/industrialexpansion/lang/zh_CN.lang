@@ -1,0 +1,22 @@
+//Interface
+itemGroup.tabIndustrialExpansion=量子装甲
+
+//Blocks
+tile.IridiumOre.name=铱矿
+
+//Items
+item.Test.name=测试工具
+item.CoalBall.name=煤球
+item.BurnedCoalBall.name=压缩煤球
+item.CoalChunk.name=煤块
+item.MultiTool.name=万用工具
+item.MultiToolBase.name=万用工具 (空)
+item.MultiToolBase2.name=万用工具 (25%)
+item.MultiToolBase3.name=万用工具 (50%)
+item.MultiToolBase4.name=万用工具 (75%)
+item.quantumHelmet.name=量子夜视头盔
+item.quantumPlate.name=量子防护装甲
+item.quantumLegs.name=量子机动裤
+item.quantumBoots.name=量子靴子
+item.Iridium.name=铱
+item.IridiumPlate.name=铱板

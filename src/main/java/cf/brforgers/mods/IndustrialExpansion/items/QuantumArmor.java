@@ -26,10 +26,10 @@ import net.minecraft.potion.Potion;
 
 public class QuantumArmor  extends ItemArmorAdv implements ISpecialArmor, IEnergyContainerItem {
 
-    public static final ArmorProperties QUANTUM = new ArmorProperties(0, 0.20D, Integer.MAX_VALUE);
+    public static final ArmorProperties QUANTUM = new ArmorProperties(0, 0.2D, Integer.MAX_VALUE);
 
-    public int maxEnergy = 20000000;
-    public int maxTransfer = 32000;
+    public int maxEnergy = 2000000;
+    public int maxTransfer = 1000;
 
     public double absorbRatio = 1.0E7D; //0.9D
     public int energyPerDamage = 20000;
@@ -47,6 +47,14 @@ public class QuantumArmor  extends ItemArmorAdv implements ISpecialArmor, IEnerg
         this.maxTransfer = maxTransfer;
 
         return this;
+    }
+    
+    public QuantumArmor setEnergyParams(int maxEnergy , int maxTransfer , int energyPerDamage) {
+    		this.maxEnergy = maxEnergy;
+    		this.maxTransfer = maxTransfer;
+    		this.energyPerDamage = energyPerDamage;
+    	
+    		return this;
     }
 
     @Override
@@ -109,7 +117,8 @@ public class QuantumArmor  extends ItemArmorAdv implements ISpecialArmor, IEnerg
         return true;
     }
 
-    @Override
+    @SuppressWarnings("unchecked")
+	@Override
     public void getSubItems(Item item, CreativeTabs tab, List list) {
 
         list.add(EnergyHelper.setDefaultEnergyTag(new ItemStack(item, 1, 0), 0));
