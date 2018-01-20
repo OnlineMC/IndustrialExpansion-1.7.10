@@ -18,7 +18,7 @@ public class RecipeManager {
         // Base: addInductionSmelterRecipe(CustoDeEnergia, Input1, Input2, Output1);
         // Um Input/Output seria algo tipo: new ItemStack(ItemManager.NomeDoItem,
         // quantidade)
-        ThermalExpansionHelper.addSmelterRecipe(ConfigHandler.energyCoalBall, new ItemStack(Items.coal,8),
+        ThermalExpansionHelper.addSmelterRecipe(ConfigHandler.energyCoalBall, new ItemStack(Items.coal, 8),
                 new ItemStack(Items.flint), new ItemStack(ItemManager.CoalBall));
         ThermalExpansionHelper.addSmelterRecipe(ConfigHandler.energyCoalChunk, new ItemStack(ItemManager.BurnedCoalBall, 8),
                 new ItemStack(Blocks.obsidian), new ItemStack(ItemManager.CoalChunk));
@@ -63,5 +63,6 @@ public class RecipeManager {
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemBootsQuantum, 1), "ABA", "CDC", "   ", 'A',
                 ItemManager.Iridium, 'B', Items.diamond_boots, 'C', GameRegistry.findItemStack(TF, "armor.bootsTin", 1),
                 'D', TEItems.capacitorResonant.copy());
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.IridumPlate,1),"AAA","AAA","AAA",'A',ItemManager.Iridium);//Add IritiumPlate Recipe
     }
 }
