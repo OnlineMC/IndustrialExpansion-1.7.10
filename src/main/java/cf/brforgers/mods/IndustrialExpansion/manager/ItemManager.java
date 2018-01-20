@@ -23,11 +23,11 @@ public class ItemManager {
 	public static Item CoalBall = new CoalBall();
 	public static Item BurnedCoalBall = new BurnedCoalBall();
 	public static Item CoalChunk = new CoalChunk();
-	public static Item MultiTool = new MultiTool(MULTITOOL);
-	public static Item MultiToolBase = new MultiToolBase();
-	public static Item MultiToolBase2 = new MultiToolBase2();
-	public static Item MultiToolBase3 = new MultiToolBase3();
-	public static Item MultiToolBase4 = new MultiToolBase4();
+//	public static Item MultiTool = new MultiTool(MULTITOOL);
+//	public static Item MultiToolBase = new MultiToolBase();
+//	public static Item MultiToolBase2 = new MultiToolBase2();
+//	public static Item MultiToolBase3 = new MultiToolBase3();
+//	public static Item MultiToolBase4 = new MultiToolBase4();
 	public static Item itemHelmetQuantum = (QuantumArmor) new QuantumArmor(ARMOR_MATERIAL_QUANTUM, 0)
 			.setEnergyParams(2000000, 1000).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumHelmet")
 			.setTextureName(Lib.RESOURCE_PATH + "QHelmet").setCreativeTab(IndustrialExpansion.tabIndustrialExpansion);
@@ -51,11 +51,11 @@ public class ItemManager {
 		GameRegistry.registerItem(CoalBall, "CoalBall");
 		GameRegistry.registerItem(BurnedCoalBall, "BurnedCoalBall");
 		GameRegistry.registerItem(CoalChunk, "CoalChunk");
-		GameRegistry.registerItem(MultiTool, "MultiTool");
-		GameRegistry.registerItem(MultiToolBase, "MultiToolBase");
-		GameRegistry.registerItem(MultiToolBase2, "MultiToolBase2");
-		GameRegistry.registerItem(MultiToolBase3, "MultiToolBase3");
-		GameRegistry.registerItem(MultiToolBase4, "MultiToolBase4");
+//		GameRegistry.registerItem(MultiTool, "MultiTool");
+//		GameRegistry.registerItem(MultiToolBase, "MultiToolBase");
+//		GameRegistry.registerItem(MultiToolBase2, "MultiToolBase2");
+//		GameRegistry.registerItem(MultiToolBase3, "MultiToolBase3");
+//		GameRegistry.registerItem(MultiToolBase4, "MultiToolBase4");
 		GameRegistry.registerItem(itemHelmetQuantum, "armor.helmetQuantum");
 		GameRegistry.registerItem(itemPlateQuantum, "armor.plateQuantum");
 		GameRegistry.registerItem(itemLegsQuantum, "armor.legsQuantum");
