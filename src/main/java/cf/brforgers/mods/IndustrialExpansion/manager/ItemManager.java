@@ -42,7 +42,10 @@ public class ItemManager {
 			.setEnergyParams(2000000, 1000).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumBoots")
 			.setTextureName(Lib.RESOURCE_PATH + "QBoots").setCreativeTab(IndustrialExpansion.tabIndustrialExpansion);
 	public static Item Iridium = new Iridium();
-	public static Item IridumPlate = new IridiumPlate();//新增铱板
+	public static Item IridiumPlate = new IridiumPlate();//新增铱板
+	public static Item DenseIridiumPlate = new DenseIridiumPlate();//新增致密铱板
+	public static Item SeepedIridiumPlate = new SeepedIridiumPlate();//新增渗透铱板
+	public static Item chargeSeepDevice = new ChargeSeepDevice();//新增充能渗透器
 
 	// Init Method
 	public static final void init() {
@@ -61,6 +64,8 @@ public class ItemManager {
 		GameRegistry.registerItem(itemLegsQuantum, "armor.legsQuantum");
 		GameRegistry.registerItem(itemBootsQuantum, "armor.bootsQuantum");
 		GameRegistry.registerItem(Iridium, "Iridium");
-		GameRegistry.registerItem(IridumPlate, "IritiumPlate");//新增铱板
+		GameRegistry.registerItem(IridiumPlate, "IritiumPlate");//新增铱板
+		GameRegistry.registerItem(DenseIridiumPlate, "DenseIritiumPlate");//新增致密铱板
+		GameRegistry.registerItem(chargeSeepDevice, "chargeSeepDevice");//新增充能渗透器
 	}
 }

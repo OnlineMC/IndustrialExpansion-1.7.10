@@ -64,5 +64,6 @@ public class RecipeManager {
                 ItemManager.IridiumPlate, 'B', Items.diamond_boots, 'C', GameRegistry.findItemStack(TF, "armor.bootsTin", 1),
                 'D', TEItems.capacitorResonant.copy());
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.IridiumPlate,1),"AAA","AAA","AAA",'A',ItemManager.Iridium);//Add IritiumPlate Recipe
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.chargeSeepDevice,1),"ABA","ACA","ADA",'A', ItemManager.DenseIridiumPlate,'B',TFItems.gearPlatinum,'C',TEItems.capacitorResonant,'D', TEItems.toolTransfuser);
     }
 }

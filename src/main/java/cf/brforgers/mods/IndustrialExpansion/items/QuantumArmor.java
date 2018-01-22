@@ -130,8 +130,8 @@ public class QuantumArmor extends ItemArmorAdv implements ISpecialArmor, IEnergy
         list.add(StringHelper.localize("info.cofh.charge") + ": " + stack.stackTagCompound.getInteger("Energy") + " / " + maxEnergy + " RF");
     }
 
-    @Override
     /**设置这个ItemStack的伤害为damage*/
+    @Override
     public void setDamage(ItemStack stack, int damage) {
 
         super.setDamage(stack, 0);
@@ -245,16 +245,16 @@ public class QuantumArmor extends ItemArmorAdv implements ISpecialArmor, IEnergy
     public void onArmorTick(World world, EntityPlayer player, ItemStack armor) {
         if (world.isRemote) return;
         if ( getEnergyStored(armor) >= getEnergyPerDamage(armor)) {    //装甲剩余电量 >= 装甲造成伤害扣除的电量
-            if (enableLegsEffect && armor.getItem() == ItemManager.itemLegs1) {         //裤子
+            if (enableLegsEffect && armor.getItem() == ItemManager.itemLegsQuantum) {         //裤子
                 player.addPotionEffect(new PotionEffect(Potion.moveSpeed.id, 260, speedLevel, true));   //获得速度效果
             }
-            if (enablePlateEffect && armor.getItem() == ItemManager.itemPlate1) {           //PotionEffect(效果ID，持续时间，效果等级，是否是范围的？)
+            if (enablePlateEffect && armor.getItem() == ItemManager.itemPlateQuantum) {           //PotionEffect(效果ID，持续时间，效果等级，是否是范围的？)
                 player.addPotionEffect(new PotionEffect(Potion.damageBoost.id, 260, damageBoostLevel, true));  //伤害提升
             }
-            if (enableHelmetEffect && armor.getItem() == ItemManager.itemHelmet1) {
+            if (enableHelmetEffect && armor.getItem() == ItemManager.itemHelmetQuantum) {
                 player.addPotionEffect(new PotionEffect(Potion.nightVision.id, 260, nightVisionLevel, true));
             }
-            if (enableBootsEffect && armor.getItem() == ItemManager.itemBoots1){
+            if (enableBootsEffect && armor.getItem() == ItemManager.itemBootsQuantum){
                 player.addPotionEffect(new PotionEffect(Potion.jump.id,260, jumpLevel,true));
             }
         }

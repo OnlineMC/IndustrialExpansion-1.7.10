@@ -15,3 +15,6 @@ item.quantumLegs.name=量子机动裤
 item.quantumBoots.name=量子靴子
 item.Iridium.name=铱
 item.IridiumPlate.name=铱板
+item.DenseIridiumPlate.name=致密铱板
+item.SeepedIridiumPlate.name=渗透铱板
+item.ChargeSeepDevice.name=充能渗透器
