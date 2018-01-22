@@ -29,17 +29,17 @@ public class ItemManager {
 //	public static Item MultiToolBase3 = new MultiToolBase3();
 //	public static Item MultiToolBase4 = new MultiToolBase4();
 	public static Item itemHelmetQuantum = (QuantumArmor) new QuantumArmor(ARMOR_MATERIAL_QUANTUM, 0)
-			.setEnergyParams(2000000, 1000).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumHelmet")
+			.setEnergyParams(800000, 500).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumHelmet")
 			.setTextureName(Lib.RESOURCE_PATH + "QHelmet").setCreativeTab(IndustrialExpansion.tabIndustrialExpansion);
 	public static Item itemPlateQuantum = (QuantumArmor) new QuantumArmor(ARMOR_MATERIAL_QUANTUM, 1)
-			.setEnergyParams(2000000, 1000).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumPlate")
+			.setEnergyParams(1000000, 800).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumPlate")
 			.setTextureName(Lib.RESOURCE_PATH + "QChestplate")
 			.setCreativeTab(IndustrialExpansion.tabIndustrialExpansion);
 	public static Item itemLegsQuantum = (QuantumArmor) new QuantumArmor(ARMOR_MATERIAL_QUANTUM, 2)
-			.setEnergyParams(2000000, 1000).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumLegs")
+			.setEnergyParams(1000000, 800).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumLegs")
 			.setTextureName(Lib.RESOURCE_PATH + "QLegs").setCreativeTab(IndustrialExpansion.tabIndustrialExpansion);
 	public static Item itemBootsQuantum = (QuantumArmor) new QuantumArmor(ARMOR_MATERIAL_QUANTUM, 3)
-			.setEnergyParams(2000000, 1000).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumBoots")
+			.setEnergyParams(500000, 500).setArmorTextures(TEXTURE_QUANTUM).setUnlocalizedName("quantumBoots")
 			.setTextureName(Lib.RESOURCE_PATH + "QBoots").setCreativeTab(IndustrialExpansion.tabIndustrialExpansion);
 	public static Item Iridium = new Iridium();
 	public static Item IridiumPlate = new IridiumPlate();//新增铱板
@@ -66,6 +66,7 @@ public class ItemManager {
 		GameRegistry.registerItem(Iridium, "Iridium");
 		GameRegistry.registerItem(IridiumPlate, "IritiumPlate");//新增铱板
 		GameRegistry.registerItem(DenseIridiumPlate, "DenseIritiumPlate");//新增致密铱板
-		GameRegistry.registerItem(chargeSeepDevice, "chargeSeepDevice");//新增充能渗透器
+        GameRegistry.registerItem(SeepedIridiumPlate,"SeepedIridiumPlate");//新增渗透铱板
+		GameRegistry.registerItem(chargeSeepDevice, "ChargeSeepDevice");//新增充能渗透器
 	}
 }

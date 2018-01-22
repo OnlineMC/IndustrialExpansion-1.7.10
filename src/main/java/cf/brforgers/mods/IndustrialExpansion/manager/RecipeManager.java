@@ -57,13 +57,12 @@ public class RecipeManager {
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemPlateQuantum, 1), "ABA", "CDC", "CAC", 'A',
                 TFItems.ingotEnderium.copy(), 'B', Items.diamond_chestplate, 'C', ItemManager.IridiumPlate, 'D',
                 TEItems.capacitorResonant.copy());
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemLegsQuantum, 1), "ABA", "CDC", "E E", 'A',
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemLegsQuantum, 1), "ABE", "CDC", "C C", 'A',
                 new ItemStack(TEBlocks.blockFrame, 1, 0), 'B', TEItems.capacitorResonant.copy(), 'C',
                 ItemManager.IridiumPlate, 'D', Items.diamond_leggings, 'E', new ItemStack(TEBlocks.blockLight, 1, 0));
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemBootsQuantum, 1), "ABA", "CDC", "   ", 'A',
-                ItemManager.IridiumPlate, 'B', Items.diamond_boots, 'C', GameRegistry.findItemStack(TF, "armor.bootsTin", 1),
-                'D', TEItems.capacitorResonant.copy());
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.IridiumPlate,1),"AAA","AAA","AAA",'A',ItemManager.Iridium);//Add IritiumPlate Recipe
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.chargeSeepDevice,1),"ABA","ACA","ADA",'A', ItemManager.DenseIridiumPlate,'B',TFItems.gearPlatinum,'C',TEItems.capacitorResonant,'D', TEItems.toolTransfuser);
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemBootsQuantum, 1), "ABA", "ACA", "   ", 'A',
+                ItemManager.IridiumPlate, 'B', Items.diamond_boots, 'C', TEItems.capacitorResonant.copy());
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.IridiumPlate, 1), "AAA", "AAA", "AAA", 'A', ItemManager.Iridium);//Add IritiumPlate Recipe
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.chargeSeepDevice, 1), "ABA", "ACA", "ADA", 'A', ItemManager.DenseIridiumPlate, 'B', TFItems.gearPlatinum, 'C', TEItems.capacitorResonant, 'D', TEItems.toolTransfuser);
     }
 }
