@@ -51,18 +51,18 @@ public class RecipeManager {
         // ItemStack(ItemManager.MultiToolBase4),new
         // ItemStack(ItemManager.MultiTool),new FluidStack(TFFluids.fluidEnder, 250),
         // false);
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemHelmetQuantum, 1), " A ", "BCB", "DED", 'A',
-                Items.diamond_helmet, 'B', ItemManager.Iridium, 'C', TEItems.capacitorResonant.copy(), 'D',
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemHelmetQuantum, 1), "BAB", "BCB", "DED", 'A',
+                Items.diamond_helmet, 'B', ItemManager.IridiumPlate, 'C', TEItems.capacitorResonant.copy(), 'D',
                 TFItems.gearLumium.copy(), 'E', new ItemStack(TEBlocks.blockGlass, 1, 0));
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemPlateQuantum, 1), "ABA", "CDC", "CAC", 'A',
-                TFItems.ingotEnderium.copy(), 'B', Items.diamond_chestplate, 'C', ItemManager.Iridium, 'D',
+                TFItems.ingotEnderium.copy(), 'B', Items.diamond_chestplate, 'C', ItemManager.IridiumPlate, 'D',
                 TEItems.capacitorResonant.copy());
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemLegsQuantum, 1), "ABA", "CDC", "E E", 'A',
                 new ItemStack(TEBlocks.blockFrame, 1, 0), 'B', TEItems.capacitorResonant.copy(), 'C',
-                ItemManager.Iridium, 'D', Items.diamond_leggings, 'E', new ItemStack(TEBlocks.blockLight, 1, 0));
+                ItemManager.IridiumPlate, 'D', Items.diamond_leggings, 'E', new ItemStack(TEBlocks.blockLight, 1, 0));
         GameRegistry.addShapedRecipe(new ItemStack(ItemManager.itemBootsQuantum, 1), "ABA", "CDC", "   ", 'A',
-                ItemManager.Iridium, 'B', Items.diamond_boots, 'C', GameRegistry.findItemStack(TF, "armor.bootsTin", 1),
+                ItemManager.IridiumPlate, 'B', Items.diamond_boots, 'C', GameRegistry.findItemStack(TF, "armor.bootsTin", 1),
                 'D', TEItems.capacitorResonant.copy());
-        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.IridumPlate,1),"AAA","AAA","AAA",'A',ItemManager.Iridium);//Add IritiumPlate Recipe
+        GameRegistry.addShapedRecipe(new ItemStack(ItemManager.IridiumPlate,1),"AAA","AAA","AAA",'A',ItemManager.Iridium);//Add IritiumPlate Recipe
     }
 }
